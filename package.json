@@ -16,5 +16,8 @@
     "got": "^11.8.2",
     "mongoose": "^6.0.7",
     "telegraf": "^4.4.2"
+  },
+  "devDependencies": {
+    "standardjs": "^1.0.0-alpha"
   }
 }

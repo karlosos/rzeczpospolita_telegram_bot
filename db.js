@@ -2,23 +2,23 @@ import mongoose from 'mongoose'
 
 import { MONGO_URI } from './env.js'
 
-async function connect() {
-    try {
-        await mongoose.connect(MONGO_URI, { useNewUrlParser: true })
-        console.log('MongoDB connected')
-    } catch (err) {
-        console.log(err)
-    }
+async function connect () {
+  try {
+    await mongoose.connect(MONGO_URI, { useNewUrlParser: true })
+    console.log('MongoDB connected')
+  } catch (err) {
+    console.log(err)
+  }
 }
 
 const ItemModel = mongoose.model('rssItems', new mongoose.Schema({
-    id: String,
-    title: String,
-    description: String,
-    link: String,
-    category: String,
-    pubDate: String,
-    author: String,
+  id: String,
+  title: String,
+  description: String,
+  link: String,
+  category: String,
+  pubDate: String,
+  author: String
 }))
 
 async function filterNewItems (items) {
@@ -48,7 +48,7 @@ async function saveItems (items) {
       link: item.link,
       category: item.category,
       pubDate: item.pubDate,
-      author: item.author,
+      author: item.author
     })
     await itemObj.save()
   }

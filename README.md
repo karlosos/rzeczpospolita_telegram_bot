@@ -56,4 +56,4 @@ heroku buildpacks:add https://github.com/heroku/heroku-buildpack-nodejs.git
 
 Add environmental variables in heroku dashboard.
 
-Application in deployed to Heroku as a background worker. It should not eat the hour quota from free plan.
+Add scheduler for job `npm start`. More about scheduling [here](https://devcenter.heroku.com/articles/scheduler).
