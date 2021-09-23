@@ -38,6 +38,8 @@ Website: <b><a href="https://t.me/rzeczpospolitapl">https://t.me/rzeczpospolitap
 
 Rzeczpspolita.pl bot is a RSS reader that notifies the telegram channel of new articles on the rp.pl website every 10 minutes.
 
+This app can be also easily changed to your liking, e.g. for reading another site feed. Change the `RSS_URL` in the `index.html` and fix the `db.js` if your RSS feed has other properties.
+
 Requirements:
 
 - MongoDB (I am using free plan on [mongodb.com](https://www.mongodb.com/))
