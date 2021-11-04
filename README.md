@@ -28,6 +28,7 @@
 <td align="center">
 <img width="2000" height="0"><br>
 Website: <b><a href="https://t.me/rzeczpospolitapl">https://t.me/rzeczpospolitapl 💬</a></b><br>
+Temporarily bot is disabled as I have ongoing problems with Heroku.
 <img width="2000" height="0">
 </td>
 </tbody>
@@ -66,3 +67,7 @@ heroku buildpacks:add https://github.com/heroku/heroku-buildpack-nodejs.git
 Add environmental variables in heroku dashboard.
 
 Add scheduler for job `npm start`. More about scheduling [here](https://devcenter.heroku.com/articles/scheduler).
+
+> ⚠️ Alert:
+> 
+> I've temporarily removed Scheduler add-on from Heroku as I have problems with theirs billing system.
